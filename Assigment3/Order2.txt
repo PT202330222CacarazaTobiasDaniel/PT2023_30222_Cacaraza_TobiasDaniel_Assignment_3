@@ -1,0 +1,10 @@
+Date : 2023.05.21.02.01.11
+
+
+
+Order ID: 2
+Client ID: 2
+Name of client: Mary
+Product ID: 2 Quantity: 12
+sare : 123.0 lei
+Total  : 1476.0 lei

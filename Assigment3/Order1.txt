@@ -1,0 +1,10 @@
+Date : 2023.05.21.01.15.57
+
+
+
+Order ID: 1
+Client ID: 2
+Name of client: Mary
+Product ID: 1 Quantity: 4
+lapte : 98.0 lei
+Total  : 392.0 lei
