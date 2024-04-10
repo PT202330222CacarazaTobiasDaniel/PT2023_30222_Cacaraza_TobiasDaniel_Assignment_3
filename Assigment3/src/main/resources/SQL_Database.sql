@@ -60,10 +60,10 @@ CREATE TABLE `schooldb`.`Bill`
     INDEX        `fk_bill_product_idx`(`Product` ASC),
     CONSTRAINT `fk_bill_client_idx`
         FOREIGN KEY (`Client`)
-            REFERENCES `schooldb`.`client` (`id`),
+            REFERENCES `schooldb`.`client` (`id`) ON DELETE CASCADE ,
     CONSTRAINT `fk_bill_product_idx`
         FOREIGN KEY (`Product`)
-            REFERENCES `schooldb`.`product` (`id`),
+            REFERENCES `schooldb`.`product` (`id`) ON DELETE CASCADE ,
     PRIMARY KEY (`id`)
 );
 

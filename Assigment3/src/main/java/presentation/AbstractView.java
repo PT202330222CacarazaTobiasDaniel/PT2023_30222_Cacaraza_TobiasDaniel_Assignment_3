@@ -6,7 +6,6 @@ import Model.Product;
 import businessLayer.bll.ClientBLL;
 import businessLayer.bll.OrderBLL;
 import businessLayer.bll.ProductBLL;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -291,11 +290,11 @@ public class AbstractView<T> extends JFrame {
             try {
                 upt.insertProduct(as);
             } catch (IllegalArgumentException ax) {
-                JOptionPane.showMessageDialog(this, "Error ! " + ax.getMessage());
+                JOptionPane.showMessageDialog(this, "Error ! Wrong Product !\n ");
             } catch (SQLException a) {
-                JOptionPane.showMessageDialog(this, "Error ! " + a.getMessage());
+                JOptionPane.showMessageDialog(this, "Error ! Wrong Product !\n" );
             } catch (Exception a) {
-                JOptionPane.showMessageDialog(this, "Error ! " + a.getMessage());
+                JOptionPane.showMessageDialog(this, "Error ! Wrong Product !\n");
             }
             this.objects = (List<T>) upt.findProductAll();
         } else if (t instanceof Client) {
@@ -307,11 +306,11 @@ public class AbstractView<T> extends JFrame {
             try {
                 upt.insertClient(as);
             } catch (IllegalArgumentException ax) {
-                JOptionPane.showMessageDialog(this, "Error ! " + ax.getMessage());
+                JOptionPane.showMessageDialog(this, "Error ! Wrong Client! ");
             } catch (SQLException a) {
-                JOptionPane.showMessageDialog(this, "Error ! " + a.getMessage());
+                JOptionPane.showMessageDialog(this, "Error ! Wrong Client!");
             } catch (Exception a) {
-                JOptionPane.showMessageDialog(this, "Error ! " + a.getMessage());
+                JOptionPane.showMessageDialog(this, "Error ! Wrong Client!");
             }
             this.objects = (List<T>) upt.findClientAll();
         }
@@ -364,9 +363,9 @@ public class AbstractView<T> extends JFrame {
                         TitleTxt[3].getText(),
                         Integer.parseInt(TitleTxt[4].getText())));
             } catch (SQLException a) {
-                JOptionPane.showMessageDialog(this, "Error ! " + a.getMessage());
+                JOptionPane.showMessageDialog(this, "Error ! Wrong Imput !\n:" + a.getMessage());
             } catch (Exception a) {
-                JOptionPane.showMessageDialog(this, "Error ! " + a.getMessage());
+                JOptionPane.showMessageDialog(this, "Error ! Wrong Imput !\n:" + a.getMessage());
             }
             this.objects = (List<T>) upt.findClientAll();
         }

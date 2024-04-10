@@ -35,10 +35,10 @@ CREATE TABLE `schooldb`.`order` (
   INDEX `fk_order_product_idx`(`Product` ASC),
   CONSTRAINT `fk_order_client_idx`
   FOREIGN KEY (`Client`)
-  REFERENCES `schooldb`.`client`(`id`),
+  REFERENCES `schooldb`.`client`(`id`) ON DELETE CASCADE,
   CONSTRAINT `fk_order_product_idx`
   FOREIGN KEY (`Product`)
-  REFERENCES `schooldb`.`product`(`id`),
+  REFERENCES `schooldb`.`product`(`id`) ON DELETE CASCADE,
   PRIMARY KEY (`id`));
   
   drop table if exists `schooldb`.`Bill`;

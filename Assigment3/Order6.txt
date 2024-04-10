@@ -1,0 +1,10 @@
+Date : 2023.05.27.23.51.52
+
+
+
+Order ID: 6
+Client ID: 3
+Name of client: test
+Product ID: 3 Quantity: 40
+carte : 5.0 lei
+Total  : 200.0 lei

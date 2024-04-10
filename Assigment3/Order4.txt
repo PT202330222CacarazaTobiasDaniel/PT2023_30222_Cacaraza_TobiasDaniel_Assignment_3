@@ -1,0 +1,10 @@
+Date : 2023.05.21.20.56.46
+
+
+
+Order ID: 4
+Client ID: 3
+Name of client: Arass
+Product ID: 2 Quantity: 2
+sare : 123.0 lei
+Total  : 246.0 lei

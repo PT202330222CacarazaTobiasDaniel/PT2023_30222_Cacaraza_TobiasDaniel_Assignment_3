@@ -1,0 +1,10 @@
+Date : 2023.05.22.13.07.15
+
+
+
+Order ID: 5
+Client ID: 4
+Name of client: aksbdkj
+Product ID: 3 Quantity: 50
+carte : 5.0 lei
+Total  : 250.0 lei

@@ -1,8 +1,12 @@
 package start;
 
+import java.awt.*;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
+import Model.Client;
+import dataAccessLayer.ClientDAO;
 import presentation.Controller;
 
 /**
